@@ -55,7 +55,14 @@
     <header id="header-main">
       <div class="container-fluid">
         <a href="index.html" class="logo" aria-label="Logo Lorenzo Fiore">
-          <img id="logo-head" src="img/elefe-logo.svg" alt="Logo web lorenzzofiore"/>
+          <!-- <img id="logo-head" src="img/elefe-logo.svg" alt="Logo web lorenzzofiore"/> -->
+          <?xml version="1.0" encoding="UTF-8"?>
+          <svg class="logo-head" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140">
+            <path class="iso-logo" d="m106.14,95.77h-13.41c-.96,0-1.73.78-1.73,1.73v13.02c0,.96-.78,1.73-1.73,1.73h-9.05c-.96,0-1.73-.78-1.73-1.73v-13.01c0-.96-.78-1.73-1.73-1.73h-13.44c-.96,0-1.73.78-1.73,1.73v12.86c0,.96-.78,1.73-1.73,1.73h-9.05c-.96,0-1.73-.78-1.73-1.73v-12.86c0-.96-.78-1.73-1.73-1.73h-13.6c-.96,0-1.73.78-1.73,1.73v29.75c0,.96.78,1.73,1.73,1.73h72.4c.96,0,1.73-.78,1.73-1.73v-29.75c0-.96-.78-1.73-1.73-1.73Z"/>
+            <path class="iso-logo" d="m106.24,74.09h-13.42s0,0,0,0h0c-.95,0-1.73.77-1.73,1.73h0v13.43h0c0,.96.77,1.73,1.73,1.73h13.43c.95,0,1.73-.77,1.73-1.73h0v-13.43h0c0-.96-.77-1.73-1.73-1.73h0s0,0,0,0Z"/>
+            <path class="iso-logo" d="m33.74,90.98h50.82c.96,0,1.73-.78,1.73-1.73v-13.42c0-.96-.78-1.73-1.73-1.73h-33.97c-.96,0-1.73-.78-1.73-1.73V13.14c0-.96-.78-1.73-1.73-1.73h-13.38c-.96,0-1.73.78-1.73,1.73v76.11c0,.96.78,1.73,1.73,1.73Z"/>
+            <path class="iso-logo" d="m106.35,40.67h-26.1c-.91,0-1.65-.74-1.65-1.65v-9.3c0-.91.74-1.65,1.65-1.65h25.63c.91,0,1.64-.74,1.64-1.64v-13.76c0-.91-.74-1.64-1.64-1.64h-42.54c-.99,0-1.79.8-1.79,1.79v54.46c0,.91.74,1.64,1.64,1.64h13.76c.91,0,1.64-.74,1.64-1.64v-8.21c0-.91.74-1.64,1.64-1.64h26.11c.91,0,1.64-.74,1.64-1.64v-13.45c0-.91-.74-1.64-1.64-1.64Z"/>
+          </svg>
         </a>
         <div class="main-menu">
           <a data-tracking-id="link-page-talk" class="item" href="#hero-banner" aria-label="button linked to ">
@@ -70,6 +77,14 @@
           <a data-tracking-id="link-page-talk" class="btn-black" href="#contacto" aria-label="button linked to Let's Talk">
             Contact 
           </a>
+          <div>
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="checkbox-label">
+              <i class="bi bi-moon-stars-fill icon-theme"></i>
+              <i class="bi bi-brightness-high-fill icon-theme"></i>
+              <span class="ball"></span>
+            </label>
+          </div>
         </div>
       </div>
     </header>
@@ -436,5 +451,11 @@
     </footer>
     <!-- Animation text hero -->
     <script src="js/text-animate.js"></script>
+    <script>
+      const checkbox = document.getElementById("checkbox")
+            checkbox.addEventListener("change", () => {
+              document.body.classList.toggle("dark")
+            })
+    </script>
   </body>
 </html>

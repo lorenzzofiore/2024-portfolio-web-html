@@ -5,9 +5,12 @@
       .cls-1 {
         fill: #1d1d1b;
       }
-
       .cls-2 {
         fill: #1d1d1b;
+      }
+      .dark .cls-2,
+      .dark .cls-1 {
+        fill: #fafafa!important;
       }
     </style>
   </defs>
