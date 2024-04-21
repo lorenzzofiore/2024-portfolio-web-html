@@ -41,6 +41,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #FEFEFE;
+    scroll-behavior: smooth;
 }
 p {
     font-family: 'Saira', sans-serif;
@@ -392,6 +393,10 @@ img#logo-head {
     gap: .8rem;
     padding: 1rem;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    transition: all ease 600ms;
+}
+.content-work .card-work:hover {
+    transform: translateY(-1rem);
 }
 .content-work .card-work .title {
     font-size: 1.5rem;
@@ -449,6 +454,10 @@ img#logo-head {
     gap: .5rem;
     padding: 1rem;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    transition: all ease 600ms;
+}
+.card-education:hover {
+    transform: translateY(-1rem) translateX(-10px);
 }
 .card-education .title {
     font-size: 1.5rem;
@@ -663,6 +672,10 @@ img#logo-head {
     gap: .5rem;
     padding: 1rem;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    transition: all ease 600ms;
+}
+.card-client:hover {
+    transform: translateY(-1rem) translateX(-10px);
 }
 .card-client .title {
     font-size: 1rem;
@@ -686,6 +699,7 @@ img#logo-head {
     padding: 6rem 0rem;
 }
 .container-contact {
+    position: relative;
     display: grid;
     grid-template-columns: 450px 1fr;
     gap: 2rem;
@@ -706,12 +720,17 @@ img#logo-head {
     text-decoration: underline!important;
 }
 .content-contact {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: flex-start;
 }
+.content-contact .form {
+    z-index: 100;
+}
 .content-contact .ilustracion {
     margin-left: -100px;
+    z-index: 90;
 }
 .ilus {
     transform: scaleX(-1);
@@ -724,6 +743,10 @@ img#logo-head {
     padding: 2rem;
     background-color: var(--purple);
     border-radius: 1rem;
+    transition: all ease 600ms;
+}
+#form-presupuesto:hover {
+    transform: translateY(-1rem) translateX(-10px);
 }
 #form-presupuesto .row-form-presupuesto {
     display: flex;
