@@ -161,6 +161,9 @@ a:hover {
 .text-bluend {
     color: var(--blue-end);
 }
+.text-blue {
+    color: var(--blue);
+}
 .text-lightblue {
     color:var(--lightblue);
 }
