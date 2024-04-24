@@ -4,9 +4,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500&display=swap');
 /* Bootstrap icons */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
-/* Icons */
-@import url(/css/bootstrap-icons.min.css);
-
+@font-face {
+    font-display:block;
+    font-family:bootstrap-icons;
+    src:url("fonts/bootstrap-icons.woff2?dd67030699838ea613ee6dbda90effa6") format("woff2"),url("fonts/bootstrap-icons.woff?dd67030699838ea613ee6dbda90effa6") format("woff")
+}
+ .bi::before,[class*=" bi-"]::before,[class^=bi-]::before{
+    display:inline-block;
+    font-family:bootstrap-icons!important;
+    font-style:normal;
+    font-weight:400!important;
+    font-variant:normal;
+    text-transform:none;
+    line-height:1;
+    vertical-align:-.125em;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale
+}
+.bi-behance::before{content:"\f65c"}
+.bi-github::before{content:"\f3ed"}
+.bi-instagram::before{content:"\f437"}
+.bi-linkedin::before{content:"\f472"}
+.bi-moon-stars-fill::before{content:"\f495"}
+.bi-brightness-high-fill::before{content:"\f1d1"}
+.bi-arrow-up-right-circle-fill::before{content:"\f140"}
 * {
     margin: 0;
     padding: 0;
