@@ -1,35 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-M8QL1NVELN"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-M8QL1NVELN");
-    </script>
-    <!-- End Google tag (gtag.js) -->
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-NC9S2LKX");
-    </script>
-    <!-- End Google Tag Manager -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -41,22 +12,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-NC9S2LKX"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
     <!-- Header Menu Navbar -->
     <header id="header-main">
       <div class="container-fluid">
         <a href="index.html" class="logo" aria-label="Logo Lorenzo Fiore">
-          <!-- <img id="logo-head" src="img/elefe-logo.svg" alt="Logo web lorenzzofiore"/> -->
-          <?xml version="1.0" encoding="UTF-8"?>
           <svg class="logo-head" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140">
             <path class="iso-logo" d="m106.14,95.77h-13.41c-.96,0-1.73.78-1.73,1.73v13.02c0,.96-.78,1.73-1.73,1.73h-9.05c-.96,0-1.73-.78-1.73-1.73v-13.01c0-.96-.78-1.73-1.73-1.73h-13.44c-.96,0-1.73.78-1.73,1.73v12.86c0,.96-.78,1.73-1.73,1.73h-9.05c-.96,0-1.73-.78-1.73-1.73v-12.86c0-.96-.78-1.73-1.73-1.73h-13.6c-.96,0-1.73.78-1.73,1.73v29.75c0,.96.78,1.73,1.73,1.73h72.4c.96,0,1.73-.78,1.73-1.73v-29.75c0-.96-.78-1.73-1.73-1.73Z"/>
             <path class="iso-logo" d="m106.24,74.09h-13.42s0,0,0,0h0c-.95,0-1.73.77-1.73,1.73h0v13.43h0c0,.96.77,1.73,1.73,1.73h13.43c.95,0,1.73-.77,1.73-1.73h0v-13.43h0c0-.96-.77-1.73-1.73-1.73h0s0,0,0,0Z"/>
@@ -78,8 +37,8 @@
             Contact 
           </a>
           <div>
-            <input type="checkbox" class="checkbox" id="checkbox">
-            <label for="checkbox" class="checkbox-label">
+            <input type="checkbox" class="checkbox" id="checkbox" aria-label="Change to dark theme">
+            <label for="checkbox" class="checkbox-label" aria-label="Change to dark theme">
               <i class="bi bi-moon-stars-fill icon-theme"></i>
               <i class="bi bi-brightness-high-fill icon-theme"></i>
               <span class="ball"></span>
@@ -101,9 +60,10 @@
                 </h1>
                 <p class="text-left text-grey text-banner text-grey">
                   Over 5 years of experience in the field of graphic design, and 2 years in
-                  development. I am a proactive, highly creative, and resourceful person; Currently,
-                  working as a frontend developer, but I also have freelance design projects in
-                  parallel.
+                  development. I am a proactive, highly creative, and resourceful person; 
+                  I like coffee, cats, playing videogames with friends and I love cars.
+                  <br>
+                  <span class="italic text-purple text-xs">Currently working as a frontend developer.</span>
                 </p>
                 <!-- Social Links -->
                 <div class="container-links">
@@ -122,7 +82,7 @@
                 </div>
               </div>
               <div class="img-hero">
-                <img src="/img/elefe-ilustration.png" alt="Ilustracion by ELEFE"/>
+                <img src="/img/elefe-ilustration.svg" alt="Ilustracion by ELEFE"/>
               </div>
             </div>
           </div>
@@ -363,45 +323,45 @@
                 <form id="form-presupuesto" method="post" netlify>
                   <h3 class="text-white py-3 semi-bold text-2xl">Let's Bring Your Vision to Life</h3>
                     <div class="row-form-presupuesto">
-                        <label for="nombreCompleto" class="visually-hidden">Name</label>
-                        <input type="text" name="nombreCompleto" id="nombreCompleto" placeholder="Name" required>
-                        <label for="telefono" class="visually-hidden">Phone</label>
+                        <label id="nombre" for="nombreCompleto" class="visually-hidden" aria-label="Nombre Name">Name</label>
+                        <input type="text" name="nombreCompleto" id="nombreCompleto" placeholder="Name" aria-labelledby="nombre" required>
+                        <label id="tel" for="telefono" class="visually-hidden" aria-label="Phone Telefono">Phone</label>
                         <input type="text" name="telefono" id="telefono" placeholder="Phone">
                     </div>
                     <div class="row-form-presupuesto">
-                        <label for="tipoCliente" class="visually-hidden">Type of Client</label>
-                        <select class="select-input appearance-none" name="tipoCliente" id="tipoCliente" required>
+                        <label id="TipoCliente" for="tipoCliente" class="visually-hidden" aria-label="Type of client">Type of Client</label>
+                        <select class="select-input appearance-none" name="tipoCliente" id="tipoCliente" aria-labelledby="TipoCliente">
                             <option disabled selected>Type of Client</option>
                             <option value="particular">Individual</option>
                             <option value="empresa">Company</option>
                         </select>
-                        <label for="servicio" class="visually-hidden">Services</label>
-                        <select class="select-input appearance-none" name="servicio" id="servicio" required>
+                        <label id="Servicios" for="servicio" class="visually-hidden" aria-label="Servicios">Services</label>
+                        <select class="select-input appearance-none" name="servicio" id="servicio" aria-labelledby="Servicios">
                             <optgroup label="Graphic Design">
-                                <option value="">Logo Design</option>
-                                <option value="">Brand Design</option>
-                                <option value="">Chalckboard Design</option>
+                                <option value="Logo Design">Logo Design</option>
+                                <option value="Brand Design">Brand Design</option>
+                                <option value="Chalckboard Design">Chalckboard Design</option>
                                 <option value="">Hourly Rate</option>
                             </optgroup>
                             <optgroup label="UI|UX & Web Design">
-                                <option value="">Web Design</option>
-                                <option value="">Web Development</option>
-                                <option value="">App Design</option>
-                                <option value="">Landing Pages</option>
+                                <option value="Web Design">Web Design</option>
+                                <option value="Web Development">Web Development</option>
+                                <option value="App Design">App Design</option>
+                                <option value="Landing Page">Landing Pages</option>
                             </optgroup>
                         </select>
                     </div>
                     <div class="row-form-presupuesto">
-                        <label for="email" class="visually-hidden">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Email" required>
+                        <label id="email" for="email" class="visually-hidden" aria-label="Email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email" aria-labelledby="email" required>
                     </div>
-                    <label for="mensaje" class="visually-hidden">Message</label>
-                    <textarea class="text-form" name="mensaje" id="mensaje" placeholder="Message" required></textarea>
+                    <label id="mensaje" for="mensaje" class="visually-hidden" aria-label="Mensaje">Message</label>
+                    <textarea class="text-form" name="mensaje" id="mensaje" placeholder="Message" aria-labelledby="mensaje" required></textarea>
                     <button class="btn-form" type="submit">Send</button>
                 </form> 
               </div>
               <div class="ilustracion">
-                <img src="img/elefe-ilustration.webp" alt="Ilustracion ELEFE Portfolio" class="ilus">
+                <img src="img/elefe-ilustration.svg" alt="Ilustracion ELEFE Portfolio" class="ilus">
               </div>
             </div>
           </div>
