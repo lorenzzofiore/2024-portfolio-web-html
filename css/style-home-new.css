@@ -717,6 +717,9 @@ a:hover {
     transform: translateY(100px);
     pointer-events: none;
     transition: all ease 600ms;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
 }
 .card-project:hover .content {
     padding-bottom: 5rem;
