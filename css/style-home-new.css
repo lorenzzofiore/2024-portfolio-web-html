@@ -409,8 +409,29 @@ a:hover {
     gap: 1rem;
     font-size: 1.5vw;
 }
-.dark .container-links i {
-    color: var(--white);
+.container-links a:hover .instagram{
+    fill: var(--purple)!important;
+}
+.container-links a:hover .linkedin{
+    fill: var(--purple)!important;
+}
+.container-links a:hover .github{
+    fill: var(--purple)!important;
+}
+.container-links a:hover .behance{
+    fill: var(--purple)!important;
+}
+.dark .container-links a:hover .instagram{
+    fill: var(--green)!important;
+}
+.dark .container-links a:hover .linkedin{
+    fill: var(--green)!important;
+}
+.dark .container-links a:hover .github{
+    fill: var(--green)!important;
+}
+.dark .container-links a:hover .behance{
+    fill: var(--green)!important;
 }
 
 /* Container Work */
