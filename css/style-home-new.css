@@ -36,6 +36,9 @@ body {
     scroll-behavior: smooth;
     transition: all ease 600ms;
 }
+.body {
+    overflow-x: hidden;
+}
 /* Dark Theme */
 body.dark {
     background-color: var(--black);
