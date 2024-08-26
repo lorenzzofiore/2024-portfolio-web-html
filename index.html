@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>ELEFE© | Web & Graphic Design</title>
     <meta name="description" content="Lorenzo Fiore is a web designer and a frontend developer based in Buenos Aires, Argentina. He specializes in creating beautiful and user-friendly websites."/>
     <link rel="icon" type="image/x-icon" href="img/favicon-elefe-white.png"/>
@@ -125,7 +126,7 @@
           </div>
         </section>
         <!-- Projects -->
-        <div id="proyectos" style="height:100px;"></div>
+        <div id="proyectos"></div>
         <section id="projects">
           <div class="container-projects">
             <div class="title-project">
@@ -144,7 +145,7 @@
               </a>
             </div>
             <div class="content-project">
-              <a href="https://www.behance.net/gallery/186395037/Shop-Integration-Netflix-App-UI-UX" target="_blank" data-tracking-id="btn-card-netflix-project" id="card-netflix" class="card-project" aria-label="button redirects to Netflix ux&ui project on behance">
+              <a href="https://www.behance.net/gallery/186395037/Shop-Integration-Netflix-App-UI-UX" target="_blank" data-tracking-id="btn-card-netflix-project" id="card-netflix" class="card-project aparecer-slide-left" aria-label="button redirects to Netflix ux&ui project on behance">
                 <div class="tags"><span class="tag">UI&UX</span><span class="tag">Figma</span></div>
                 <div class="content">
                   <h3 class="title">UI|UX Netflix Shop</h3>
@@ -159,7 +160,7 @@
                 </div>
                 <span class="date">2023</span>
               </a>
-              <a href="https://australservicios.es/" target="_blank" data-tracking-id="btn-card-austral-web" id="card-austral" class="card-project" aria-label="button redirects to austral services web home">
+              <a href="https://australservicios.es/" target="_blank" data-tracking-id="btn-card-austral-web" id="card-austral" class="card-project aparecer-anim" aria-label="button redirects to austral services web home">
                 <div class="tags"><span class="tag">WEB</span><span class="tag">HTML</span></div>
                 <div class="content">
                   <h3 class="title">Web Project Austral</h3>
@@ -174,7 +175,7 @@
                 </div>
                 <span class="date">2023</span>
               </a>
-              <a href="https://www.behance.net/gallery/65861201/BONN-Cerveza-Artesanal" target="_blank" data-tracking-id="btn-card-bonn-project" id="card-bonn" class="card-project" aria-label="button redirects to BONN Design project on behance">
+              <a href="https://www.behance.net/gallery/65861201/BONN-Cerveza-Artesanal" target="_blank" data-tracking-id="btn-card-bonn-project" id="card-bonn" class="card-project aparecer-slide-right" aria-label="button redirects to BONN Design project on behance">
                 <div class="tags"><span class="tag">DESIGN</span><span class="tag">LOGO</span></div>
                 <div class="content">
                   <h3 class="title">Visual identity BONN</h3>
@@ -193,18 +194,18 @@
           </div>
         </section>
         <!-- Work Experience -->
-        <div id="experience" style="height:100px;"></div>
+        <div id="experience" class="aparecer-anim"></div>
         <section id="work-experience">
           <div class="container-work">
             <div class="title-work">
-              <h2 class="container-text-anim">
+              <h2 class="container-text-anim aparecer-slide-left">
                 <div class="box">
                   <div class="title">
                     <span class="block"></span>
                     <h2 class="text-black title-h2">Work Experience<span></span></h2>
                 </div>
               </h2>
-              <a class="flex gap-2 items-center" data-tracking-id="btn-social-linkedin" href="https://www.linkedin.com/in/uilorenzzo/" target="_blank" aria-label="linkedin profile Lorenzo Fiore">
+              <a class="flex gap-2 items-center aparecer-slide-right" data-tracking-id="btn-social-linkedin" href="https://www.linkedin.com/in/uilorenzzo/" target="_blank" aria-label="linkedin profile Lorenzo Fiore">
                 view in Linkedin 
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#1f1f1f" class="bi bi-linkedin" viewBox="0 0 16 16">
                   <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
@@ -212,7 +213,7 @@
               </a>
             </div>
             <div class="content-work">
-              <article class="card-work">
+              <article class="card-work aparecer-slide-left">
                 <h3 class="title">Creative Director</h3>
                 <p class="agency text-grey">
                   At <img loading="lazy" src="img/logo-tnfc-elefe-portfolio.webp" alt="Logo The New Farm Company - Work Experience ELEFE">
@@ -222,7 +223,7 @@
                 </p>
                 <span class="date">2019</span>
               </article>
-              <article class="card-work">
+              <article class="card-work aparecer-slide-left">
                 <h3 class="title">UX|UI Designer</h3>
                 <p class="agency text-grey">
                   At <img loading="lazy" src="img/logo-wiwo-elefe-portfolio.webp" alt="Logo WIWO Company - Work Experience ELEFE">
@@ -232,7 +233,7 @@
                 </p>
                 <span class="date">2021</span>
               </article>
-              <article class="card-work">
+              <article class="card-work aparecer-slide-left">
                 <h3 class="title">Frontend Developer</h3>
                 <p class="agency text-grey">
                   At <img loading="lazy" src="img/logo-domo-elefe-portfolio.webp" alt="Logo WIWO Company - Work Experience ELEFE">
@@ -248,7 +249,7 @@
         <!-- Education -->
         <section id="education">
           <div class="container-education">
-            <div class="title-education">
+            <div class="title-education aparecer-slide-left">
               <h2 class="container-text-anim">
                 <div class="box">
                   <div class="title">
@@ -264,7 +265,7 @@
               </a>
             </div>
             <div class="content-education">
-              <article class="card-education">
+              <article class="card-education aparecer-slide-right">
                 <h3 class="title">Graphic Design Degree</h3>
                 <p class="agency text-grey">
                   At <img loading="lazy" src="img/logo-fadu-uba-education-elefe.webp" alt="Logo FADU UBA - Education ELEFE">
@@ -272,7 +273,7 @@
                 </p>
                 <span class="date">2024</span>
               </article>
-              <article class="card-education">
+              <article class="card-education aparecer-slide-right">
                 <h3 class="title">Professional Frontend Developer </h3>
                 <p class="agency text-grey">
                   At <img loading="lazy" src="img/logo-utn-education-elefe.webp" alt="Logo UTN - Education ELEFE">
@@ -286,7 +287,7 @@
         <!-- What Clients Ask -->
         <section id="clients">
           <div class="container-clients">
-            <div class="title-clients">
+            <div class="title-clients aparecer-anim">
               <h2 class="container-text-anim">
                 <div class="box">
                   <div class="title">
@@ -302,7 +303,7 @@
               </a>
             </div>
             <div class="content-clients">
-              <article class="card-client">
+              <article class="card-client aparecer-slide-right">
                 <div class="agency text-grey">
                   <h3 class="title">What kind of services you are providing?</h3>
                   <img src="img/icon-services-elefe.svg" alt="Logo FADU UBA - Education ELEFE" width="5rem" height="auto">
@@ -316,7 +317,7 @@
                 </p>
               </article>
               <div class="question">
-                <article class="card-client">
+                <article class="card-client aparecer-slide-right">
                   <div class="agency text-grey">
                     <h3 class="title">What the time-zone do you work in?</h3>
                     <img src="img/icon-timezone-elefe.svg" alt="Logo UTN - Education ELEFE" width="5rem" height="auto">
@@ -326,7 +327,7 @@
                     I understand the importance of timely responses and project updates, and being in the same time zone allows me to provide you with the best possible support.
                   </p>
                 </article>
-                <article class="card-client mt-4">
+                <article class="card-client mt-4 aparecer-slide-right">
                   <div class="agency text-grey">
                     <h3 class="title">What is your hourly rate?</h3>
                     <img src="img/icon-hourly-rate-elefe.svg" alt="Logo UTN - Education ELEFE" width="5rem" height="auto">                    
@@ -339,7 +340,7 @@
                   </p>
                 </article>
               </div>
-              <article class="card-client">
+              <article class="card-client aparecer-slide-right">
                 <div class="agency text-grey">
                   <h3 class="title">Do you give lifetime support?</h3>
                   <img src="img/icon-support-elefe.svg" alt="Logo UTN - Education ELEFE">
@@ -357,7 +358,7 @@
         <div id="contacto" style="height:100px;"></div>
         <section id="contact">
           <div class="container-contact">
-            <div class="title-contact">
+            <div class="title-contact aparecer-slide-left">
               <h2 class="text-black title-h2">Bring your ideas <br class="br-mobile">to life</h2>
               <p class="text-grey">
                 Send me a personalized mail or<br class="br-mobile">
@@ -387,7 +388,7 @@
               </div>
             </div>
             <div class="content-contact">
-              <div class="form">
+              <div class="form aparecer-slide-right">
                 <form id="form-presupuesto" method="post" netlify>
                   <h3 class="text-black py-3 semi-bold text-2xl">Let's Bring Your Vision to Life</h3>
                     <div class="row-form-presupuesto">
@@ -428,7 +429,7 @@
                     <button class="btn-form" type="submit">Send</button>
                 </form> 
               </div>
-              <div class="ilustracion">
+              <div class="ilustracion aparecer-slide-right">
                 <img src="img/elefe-ilustration.svg" alt="Ilustracion ELEFE Portfolio" class="ilus">
               </div>
             </div>

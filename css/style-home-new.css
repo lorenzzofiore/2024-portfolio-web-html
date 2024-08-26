@@ -1388,3 +1388,94 @@ a:hover {
       bottom: 0px;
     }
 }
+/*--animaciones aparecer--*/
+.aparecer-anim {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: show;
+    animation-range: entry 35% cover 40%;
+    animation-fill-mode: both;
+    animation-duration: 2s;
+}
+.aparecer-slide-left {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: appear-slide-left;
+    animation-range: entry 35% cover 40%;
+    animation-fill-mode: both;
+    animation-duration: 2s;
+}
+.aparecer-slide-right {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: appear-slide-right;
+    animation-range: entry 35% cover 40%;
+    animation-fill-mode: both;
+    animation-duration: 2s;
+}
+@keyframes show {
+    from {
+      opacity: 0;
+      scale: 25%;
+    }
+  
+    to {
+      opacity: 1;
+      scale: 100%;
+    }
+}
+@keyframes appear-slide-left {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+}
+@keyframes appear-slide-right {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+}
+/*--fin animaciones aparecer--*/
+/* Estilos iniciales para ocultar los elementos */
+#header-main, .container-hero, #experience {
+    opacity: 0;
+    transform: translateY(20px); /* Desplaza el elemento hacia abajo */
+    animation-fill-mode: forwards; /* Mantiene el estado final de la animación */
+}
+
+/* Definición de la animación */
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplicar la animación a los elementos */
+#header-main {
+    animation: reveal 1s ease-out 0.5s forwards; /* Duración de 1s, con retardo de 0.5s */
+}
+#experience {
+    animation: reveal 1s ease-out 0.5s forwards; /* Duración de 1s, con retardo de 0.5s */
+}
+.container-hero {
+    animation: reveal 1s ease-out 1s forwards; /* Duración de 1s, con retardo de 1s */
+}
