@@ -915,7 +915,7 @@ a:hover {
     height: 6rem;
     border-radius: .7rem;
     padding: .4rem 1rem;
-    color: var(--white);
+    color: var(--black);
     margin-top: 1rem;
 }
 #form-presupuesto .btn-form {
